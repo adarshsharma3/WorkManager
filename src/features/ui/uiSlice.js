@@ -1,10 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// Function to get the initial theme from localStorage or system preference
+const getInitialTheme = () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    return savedTheme;
+  }
+  // If no saved theme, check system preference
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+
 const initialState = {
   statusFilter: 'All',
   sortKey: 'name',
   searchTerm: '',
-  theme: 'light',
+  // Set the initial theme based on our function
+  theme: getInitialTheme(),
   sidebarCollapsed: false,
 };
 
@@ -21,8 +33,11 @@ const uiSlice = createSlice({
     setSearchTerm: (state, action) => {
       state.searchTerm = action.payload;
     },
+    // This reducer remains the same, it just toggles the state
     toggleTheme: (state) => {
-      state.theme = state.theme === 'light' ? 'dark' : 'light';
+        console.log(`${state.theme}`)
+        state.theme = state.theme === 'light' ? 'dark' : 'light';
+
     },
     setTheme: (state, action) => {
       state.theme = action.payload;
