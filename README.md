@@ -6,13 +6,6 @@ A professional, portfolio-quality productivity monitoring tool built for interna
 
 🌐 **Live Demo**: [Click Here](https://work-manager-tan.vercel.app/)
 
----
-
-## 📸 Preview
-
-![Team Pulse Dashboard Preview](https://your-screenshot-url-if-any)
-
----
 
 ## 🛠 Tech Stack
 
