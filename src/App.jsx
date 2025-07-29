@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import useTheme from './hooks/useTheme';
 import useIdleTimer from './hooks/useIdleTimer';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateMemberStatus } from './features/team/membersSlice';
+import { updateMemberStatus } from './features/team/memberSlice';
 
 const AppContent = () => {
   const dispatch = useDispatch();
