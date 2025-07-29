@@ -1,9 +1,9 @@
 import React from 'react';
-import StatusSummary from '../features/team/components/StatusSummary';
-import MemberControls from '../features/team/components/MemberControls';
-import MemberList from '../features/team/components/MemberList';
-import TaskForm from '../features/team/components/TaskForm';
-import StatusPieChart from '../features/team/components/StatusPieChart';
+import StatusSummary from '../featuresRedux/team/components/StatusSummary';
+import MemberControls from '../featuresRedux/team/components/MemberControls';
+import MemberList from '../featuresRedux/team/components/MemberList';
+import TaskForm from '../featuresRedux/team/components/TaskForm';
+import StatusPieChart from '../featuresRedux/team/components/StatusPieChart';
 
 const TeamLeadView = () => {
   return (

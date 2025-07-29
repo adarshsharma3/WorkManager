@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectCurrentUser } from '../features/team/selectors';
-import RoleSwitcher from '../features/role/RoleSwitcher';
+import { selectCurrentUser } from '../featuresRedux/team/selectors';
+import RoleSwitcher from '../featuresRedux/role/RoleSwitcher';
 import ThemeToggle from './ThemeToggle';
 import { Activity } from 'lucide-react';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectCurrentUser } from '../features/team/selectors';
-import StatusSelector from '../features/team/components/StatusSelector';
-import MyTasksList from '../features/team/components/MyTasksList';
+import { selectCurrentUser } from '../featuresRedux/team/selectors';
+import StatusSelector from '../featuresRedux/team/components/StatusSelector';
+import MyTasksList from '../featuresRedux/team/components/MyTasksList';
 import Card from '../components/Card';
 import { User } from 'lucide-react';
 

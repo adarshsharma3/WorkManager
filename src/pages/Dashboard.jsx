@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchTeamData } from '../features/team/memberSlice';
+import { fetchTeamData } from '../featuresRedux/team/memberSlice';
 import TeamLeadView from './TeamLeadView';
 import TeamMemberView from './TeamMemberView';
 import { Loader2 } from 'lucide-react';

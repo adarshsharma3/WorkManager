@@ -1,12 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { store } from './featuresRedux/store';
 import Header from './components/Header';
 import Dashboard from './pages/Dashboard';
 import useTheme from './hooks/useTheme';
 import useIdleTimer from './hooks/useIdleTimer';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateMemberStatus } from './features/team/memberSlice';
+import { updateMemberStatus } from './featuresRedux/team/memberSlice';
 
 const AppContent = () => {
   const dispatch = useDispatch();

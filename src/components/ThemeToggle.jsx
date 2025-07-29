@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleTheme } from '../features/ui/uiSlice';
+import { toggleTheme } from '../featuresRedux/ui/uiSlice';
 import { Sun, Moon } from 'lucide-react';
 
 const ThemeToggle = () => {
