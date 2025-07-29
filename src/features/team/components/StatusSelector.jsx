@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateMemberStatus } from '../membersSlice';
+import { updateMemberStatus } from '../memberSlice';
 import { selectCurrentUser } from '../selectors';
 import Card from '../../../components/Card';
 import { Users, Coffee, Clock, UserX } from 'lucide-react';
