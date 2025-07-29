@@ -1,96 +1,133 @@
-Team Pulse Dashboard
-
-Project Overview
-
-Team Pulse is a professional, portfolio-quality productivity monitoring tool designed for internal teams. This application provides role-based views for "Team Leads" and "Team Members," enabling efficient team management and status tracking. Team Leads can monitor their team's live status, assign tasks, and analyze team distribution, while Team Members can update their own work status and manage their assigned tasks' progress.  
-
-The dashboard is built using a modern, scalable frontend architecture, prioritizing maintainability, performance, and a superior developer experience.
-
-Live:
-[****](https://work-manager-tan.vercel.app/) 
 
 
-Tech Stack
+# 🚀 Team Pulse Dashboard
 
-This project leverages a modern and efficient technology stack, adhering to industry best practices for building robust single-page applications.  
+A professional, portfolio-quality productivity monitoring tool built for internal teams. Team Pulse provides **role-based dashboards** for both **Team Leads** and **Team Members** to ensure effective team management, live status tracking, and productivity enhancement.
 
-    Core Framework: React (with Hooks)
+🌐 **Live Demo**: [Click Here](https://work-manager-tan.vercel.app/)
 
-    Build Tool: Vite
+---
 
-    State Management: Redux Toolkit
+## 📸 Preview
 
-    Styling: Tailwind CSS
+![Team Pulse Dashboard Preview](https://your-screenshot-url-if-any)
 
-    Data Visualization: Recharts
+---
 
-    Initial Data Source: randomuser.me API   
+## 🛠 Tech Stack
 
-Features
+| Feature              | Technology            |
+|----------------------|------------------------|
+| Core Framework       | React (with Hooks)     |
+| Build Tool           | Vite                   |
+| State Management     | Redux Toolkit          |
+| Styling              | Tailwind CSS           |
+| Data Visualization   | Recharts               |
+| Initial Data Source  | [randomuser.me API](https://randomuser.me) |
 
-The application is divided into two primary roles, each with a distinct set of functionalities.  
+---
 
-Core Functionality
+## ✨ Core Features
 
-    Role Switching: A seamless toggle allows users to switch between the "Team Lead" and "Team Member" views, with the current role managed in the global Redux state.
+### 🔄 Role Switching  
+Easily toggle between:
+- **Team Lead View**
+- **Team Member View**
 
-Team Lead View
+Role state is managed globally using **Redux**.
 
-    Team Member Status Monitor: View a real-time list of all team members, complete with their name, avatar, and a colored status badge (Working, Break, Meeting, Offline).
+---
 
-    Status Summary: A dashboard widget displays an aggregate count of team members by their current status (e.g., "2 Working, 1 Meeting").
+## 👨‍💼 Team Lead View
 
-    Task Assignment: Assign new tasks to team members via a dedicated form that includes a member selection dropdown, a task title input, and a due date picker.
+- 🧑‍💻 **Live Team Member Status Monitor**  
+  Real-time list with:
+  - Avatar
+  - Name
+  - Colored status badge (Working, Break, Meeting, Offline)
 
-    Advanced Filtering & Sorting:
+- 📊 **Status Summary Widget**  
+  Displays the aggregate count (e.g., “2 Working, 1 Meeting”)
 
-        Filter the member list by their current status.
+- 📋 **Task Assignment Tool**  
+  Assign new tasks using:
+  - Dropdown (Member selection)
+  - Task title input
+  - Due date picker
 
-        Sort the member list by the number of active (uncompleted) tasks.
+- 🔍 **Advanced Filtering & Sorting**  
+  - Filter members by current status  
+  - Sort by number of active (uncompleted) tasks
 
-Team Member View
+---
 
-    Live Status Updates: Update your own working status with a single click from a selection of options (Working, Break, Meeting, Offline). The change is reflected globally across the application.
+## 👨‍💻 Team Member View
 
-    Personal Task Management: View a list of all tasks assigned to you. Each task item includes:
+- ⚡ **Live Status Updates**  
+  Instantly update your status:
+  - Working
+  - Break
+  - Meeting
+  - Offline
 
-        A progress bar (0-100%).
+- ✅ **Personal Task Manager**
+  - View assigned tasks  
+  - Progress bar (0–100%)  
+  - +10% / -10% buttons  
+  - Auto mark as **Completed** at 100%
 
-        Controls to increment or decrement progress in 10% steps.
+---
 
-        An automatic "Completed" status when progress reaches 100%.
+## 🎁 Bonus Features
 
-Bonus Features
+- 💤 **Inactivity Detector**  
+  Automatically marks a user as “Offline” after **10 minutes of inactivity**
 
-    Inactivity Detector: The application automatically sets a user's status to "Offline" after 10 minutes of inactivity to ensure status accuracy.
+- 🧁 **Status Distribution Chart**  
+  A real-time **pie chart** shows how the team is distributed across statuses
 
-    Status Distribution Chart: A visually appealing pie chart on the Team Lead dashboard displays the current distribution of team member statuses.
+- 🌙 **Dark Mode**  
+  Persistent and flicker-free  
+  - Toggle with 1 click  
+  - Preference saved in `localStorage`
 
-    Dark Mode: A persistent, flicker-free dark mode can be toggled, with the user's preference saved in localStorage for a consistent experience across sessions.
+---
 
-Local Setup and Installation
+## 🧑‍💻 Local Setup & Installation
 
-To run this project on your local machine, please follow these steps:
+### 1. Clone the Repository
 
-    Clone the Repository
-    Bash
+```bash
+git clone https://github.com/adarshsharma3/WorkManager
+cd WorkManager
 
-git clone https://github.com/<your-username>/team-pulse-dashboard.git
-
-Navigate to the Project Directory
-
-Install Dependencies
-This project uses npm for package management. Run the following command to install all the necessary dependencies.
-Bash
+2. Install Dependencies
 
 npm install
 
-Run the Development Server
-Once the dependencies are installed, you can start the local development server, which is powered by Vite.
-Bash
+3. Start Development Server
 
-    npm run dev
+npm run dev
 
-    Open in Browser
-    The application will be running at http://localhost:5173 (or the next available port). Open this URL in your web browser to view the application.
+🔗 App will run at: http://localhost:5173
+📂 Folder Structure (optional)
 
+src/
+├── app/
+│   └── store.js
+├── components/
+├── featuresRedux/
+│   └── ui/
+│       └── uiSlice.js
+├── pages/
+├── hooks/
+├── lib/
+├── assets/
+
+📝 License
+
+This project is open-source and available under the MIT License.
+✍️ Author
+
+Adarsh Sharma
+📧 adarshsharma3
