@@ -103,19 +103,7 @@ npm install
 npm run dev
 
 🔗 App will run at: http://localhost:5173
-📂 Folder Structure (optional)
 
-src/
-├── app/
-│   └── store.js
-├── components/
-├── featuresRedux/
-│   └── ui/
-│       └── uiSlice.js
-├── pages/
-├── hooks/
-├── lib/
-├── assets/
 
 📝 License
 
