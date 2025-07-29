@@ -105,10 +105,4 @@ npm run dev
 🔗 App will run at: http://localhost:5173
 
 
-📝 License
-
-This project is open-source and available under the MIT License.
-✍️ Author
-
-Adarsh Sharma
-📧 adarshsharma3
+Thank You.
