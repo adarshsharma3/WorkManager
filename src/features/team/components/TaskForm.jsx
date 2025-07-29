@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAllMembers } from '../selectors';
-import { addTask } from '../membersSlice';
+import { addTask } from '../memberSlice';
 import Card from '../../../components/Card';
 import Button from '../../../components/Button';
 import { Plus, User, Calendar, FileText } from 'lucide-react';

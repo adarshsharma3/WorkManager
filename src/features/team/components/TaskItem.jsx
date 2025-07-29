@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { updateTaskProgress, deleteTask } from '../membersSlice';
+import { updateTaskProgress, deleteTask } from '../memberSlice';
 import ProgressBar from '../../../components/ProgressBar';
 import Button from '../../../components/Button';
 import { Calendar, Minus, Plus, Trash2, CheckCircle } from 'lucide-react';
